@@ -303,7 +303,7 @@ public class MUCIqAdminHandler extends DefaultIQHandler {
                 .build();
     }
 
-    private Stanza changeRole(IQStanza stanza, ServerRuntimeContext serverRuntimeContext,
+    protected Stanza changeRole(IQStanza stanza, ServerRuntimeContext serverRuntimeContext,
             SessionContext sessionContext, IqAdminItem item, Room room, Occupant moderator) {
         Occupant target = null;
         if (item.getNick() != null) {
