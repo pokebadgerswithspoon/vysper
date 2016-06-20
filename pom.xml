@@ -27,7 +27,7 @@
   <groupId>org.apache.vysper</groupId>
   <artifactId>vysper-parent</artifactId>
   <name>Apache Vysper Parent</name>
-  <version>0.8-SNAPSHOT</version>
+  <version>0.8-l1</version>
   <packaging>pom</packaging>
   <url>http://mina.apache.org/vysper</url>
 
@@ -453,4 +453,15 @@
     <maven.compile.source>1.5</maven.compile.source>
     <maven.compile.target>1.5</maven.compile.target>
   </properties>
+    <distributionManagement>
+        <repository>
+            <id>netherhost-repo</id>
+            <url>https://netherhost/artifactory/ext-release-local</url>
+        </repository>
+        <snapshotRepository>
+            <id>netherhost-repo</id>
+            <url>https://netherhost/artifactory/ext-snapshot-local</url>
+        </snapshotRepository>
+    </distributionManagement>
+
 </project>

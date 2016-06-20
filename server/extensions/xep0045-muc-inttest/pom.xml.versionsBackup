@@ -18,45 +18,50 @@
 
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
   <parent>
-    <artifactId>vysper-extensions</artifactId>
-    <groupId>org.apache.vysper</groupId>
-    <version>0.8-l1</version>
+	<artifactId>vysper-extensions</artifactId>
+	<groupId>org.apache.vysper</groupId>
+	<version>0.8-SNAPSHOT</version>
   </parent>
   <modelVersion>4.0.0</modelVersion>
   <groupId>org.apache.vysper.extensions</groupId>
-  <artifactId>xep0060-pubsub</artifactId>
-  <name>Apache Vysper XEP-0060 Publish-Subscribe</name>
-  <version>0.8-l1</version>
-  
+  <artifactId>xep0045-muc-inttest</artifactId>
+  <name>Apache Vysper XEP-0045 Integration tests</name>
+  <version>0.8-SNAPSHOT</version>
   
   <dependencies>
     <dependency>
-      <groupId>org.apache.vysper</groupId>
-      <artifactId>spec-compliance</artifactId>
-      <optional>true</optional>
+      <groupId>org.apache.vysper.extensions</groupId>
+      <artifactId>xep0045-muc</artifactId>
     </dependency>
-    
+
     <dependency>
-      <groupId>org.apache.vysper</groupId>
-      <artifactId>vysper-core</artifactId>
+      <groupId>org.slf4j</groupId>
+      <artifactId>slf4j-log4j12</artifactId>
+	  <scope>test</scope>
     </dependency>
-    
+
+    <dependency>
+      <groupId>log4j</groupId>
+      <artifactId>log4j</artifactId>
+	  <scope>test</scope>
+    </dependency>
+
     <!-- Test dependencies -->
     <dependency>
       <groupId>junit</groupId>
       <artifactId>junit</artifactId>
       <scope>test</scope>
     </dependency>
-    
+
     <dependency>
-      <groupId>org.slf4j</groupId>
-      <artifactId>slf4j-log4j12</artifactId>
+      <groupId>jivesoftware</groupId>
+      <artifactId>smack</artifactId>
       <scope>test</scope>
     </dependency>
-    
+
     <dependency>
-      <groupId>log4j</groupId>
-      <artifactId>log4j</artifactId>
+      <groupId>jivesoftware</groupId>
+      <artifactId>smackx</artifactId>
       <scope>test</scope>
     </dependency>
   </dependencies>
